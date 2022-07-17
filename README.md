@@ -4,8 +4,8 @@
 
 `Screenshots`
 
-![screenshot-pagina-inicial](resources/01.png)
-![screenshot-menu-1](resources/02.png)
+![screenshot-pagina-inicial](resources/01.png) \
+![screenshot-menu-1](resources/02.png) \
 ![screenshot-menu-2](resources/03.png)
 
 ---
