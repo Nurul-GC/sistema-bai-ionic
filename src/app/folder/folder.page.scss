@@ -2,6 +2,11 @@ ion-menu-button {
   color: var(--ion-color-primary);
 }
 
+ion-header{
+  background-color: #001c55;
+  color: #fff;
+}
+
 #container {
   text-align: center;
   position: absolute;
@@ -25,4 +30,10 @@ ion-menu-button {
 
 #container a {
   text-decoration: none;
+}
+
+ion-footer{
+  text-align: center;
+  background-color: #001c55;
+  color: #fff;
 }
