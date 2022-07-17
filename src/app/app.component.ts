@@ -6,13 +6,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Inbox', url: '/folder/Inbox', icon: 'mail' },
-    { title: 'Outbox', url: '/folder/Outbox', icon: 'paper-plane' },
-    { title: 'Favorites', url: '/folder/Favorites', icon: 'heart' },
-    { title: 'Archived', url: '/folder/Archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
+    { title: 'Convidar Amigos', url: '/folder/Convidar-Amigos', icon: 'person-add' },
+    { title: 'Recarregar Telefone', url: '/folder/Recarregar-Telefone', icon: 'phone-portrait' },
+    { title: 'Ajustar Limites', url: '/folder/Ajustar-Limites', icon: 'options' },
+    { title: 'Carteira Digital', url: '/folder/Carteira-Digital', icon: 'wallet' },
+    { title: 'Cartões Virtuais', url: '/folder/Cartões-Virtuais', icon: 'card' },
+    { title: 'Bloquear Cartões', url: '/folder/Bloquear-Cartões', icon: 'lock-open' },
+    { title: 'Ajuda', url: '/folder/Ajuda', icon: 'help-circle' },
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+  public labels = ['Familia', 'Amigos', 'Notas', 'Trabalho', 'Viagens', 'Lembretes'];
   constructor() {}
 }
