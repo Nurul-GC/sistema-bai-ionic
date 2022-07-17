@@ -1,12 +1,32 @@
 <ion-app>
   <ion-split-pane contentId="main-content">
     <ion-menu contentId="main-content" type="overlay">
-      <ion-content>
+      <ion-content class="primary-color">
         <ion-list id="inbox-list">
-          <ion-list-header>Inbox</ion-list-header>
-          <ion-note>hi@ionicframework.com</ion-note>
+          <ion-list-header>
+            <img alt="..." src="../assets/icon/bai-icon.png" height="50px" width="50px">
+            <small>Banco Angolano Investimento</small>
+          </ion-list-header>
 
-          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+          <ion-card>
+            <ion-card-header>
+              Dados do Usuario
+            </ion-card-header>
+            <ion-card-content>
+              <strong>Nome:</strong> Universidade Mandume Ya NdeMufayo<br>
+              <strong>Numero Conta:</strong> 0123456789<br>
+              <strong>Agencia Registro:</strong> Lubango, Huila
+            </ion-card-content>
+            <ion-button class="logout" color="dark" expand="block" fill="inline">
+              <s>Terminar Sessao</s>
+            </ion-button>
+          </ion-card>
+
+          <ion-note> 
+            <strong>Funções</strong>
+          </ion-note>
+
+          <ion-menu-toggle auto-hide="true" *ngFor="let p of appPages; let i = index">
             <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
               <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
               <ion-label>{{ p.title }}</ion-label>
@@ -15,13 +35,26 @@
         </ion-list>
 
         <ion-list id="labels-list">
-          <ion-list-header>Labels</ion-list-header>
+          <ion-note>
+            <strong>Atalhos</strong>
+          </ion-note>
 
           <ion-item *ngFor="let label of labels" lines="none">
             <ion-icon slot="start" ios="bookmark-outline" md="bookmark-sharp"></ion-icon>
             <ion-label>{{ label }}</ion-label>
           </ion-item>
         </ion-list>
+
+        <ion-card>
+          <ion-card-header>
+            <strong>
+              Direitos Autorais e Editoriais Reservados
+            </strong>
+          </ion-card-header>
+          <ion-card-content>
+            <img alt="..." src="../assets/img/bai-footer.jpeg" height="auto" width="auto"/>
+          </ion-card-content>
+        </ion-card>
       </ion-content>
     </ion-menu>
     <ion-router-outlet id="main-content"></ion-router-outlet>
