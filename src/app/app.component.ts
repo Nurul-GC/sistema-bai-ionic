@@ -14,6 +14,13 @@ export class AppComponent {
     { title: 'Bloquear Cartões', url: '/folder/Bloquear-Cartões', icon: 'lock-open' },
     { title: 'Ajuda', url: '/folder/Ajuda', icon: 'help-circle' },
   ];
-  public labels = ['Familia', 'Amigos', 'Notas', 'Trabalho', 'Viagens', 'Lembretes'];
+  public labels = [
+    'Familia',
+    'Amigos',
+    'Notas',
+    'Trabalho',
+    'Viagens',
+    'Lembretes'
+  ];
   constructor() {}
 }
